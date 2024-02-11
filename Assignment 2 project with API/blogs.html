@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  />
+
+  <style>
+    body{
+        background-image: url(/back-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+       
+    }
+  </style>
+</head>
+<body>
+  <div class="w-50 m-auto p-5 acc ">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Discuss the scope of var, let, and const
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <strong>var-></strong>  Variables declared with var are function-scoped or  Globally scoped. 
+              They are visible throughout the entire function, regardless of where they are declared. 
+              Can be re-declared within its scope.
+               Can be updated within its scope.
+              Hoisted to the top of its scope.
+              <br/>
+              <strong>let-></strong>Variables declared with let are block-scoped. 
+              They are visible only within the block where they are defined.
+               Cannot be re-declared within the same scope.
+               Can be updated within its scope.
+              Hoisted to the top of its scope, but not initialized until the declaration is reached.
+              <br/>
+              <strong>Const-></strong>  variables declared with const are block-scoped. 
+              Cannot be re-declared within the same scope.
+               Cannot be updated once initialized.
+              Hoisted to the top of its scope, but not initialized until the declaration is reached.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Tell us the use cases of null and undefined
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Use Cases for null:</strong> Null is used to indicate the absence of a value.
+               Setting a variable to null is sometimes used to reset or clear a value.
+               <br/>
+               <strong>Use Cases for undefined: </strong>Represents the absence of an assigned value.
+                When trying to access an object property that doesn't exist, the result is undefined.
+                Variables that are declared but not assigned a value are automatically initialized with undefined.
+                If a function doesn't have an return statement, it returns undefined.
+
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                What do you mean by REST API?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <strong>Rest API-></strong> REST API, which stands for Representational State Transfer Application Programming Interface
+               is a way for computer programs to talk to each other over the internet.
+               It follows principles like using standard web addresses (URLs) for things, using standard commands like GET for getting data,
+                and not keeping track of past interactions. REST makes it easy for different programs to work together in a simple and scalable way.
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+
+   <script src="/project.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
